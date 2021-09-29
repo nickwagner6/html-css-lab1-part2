@@ -1,5 +1,7 @@
 body,
-h1 {
+h1,
+p,
+ul {
   margin: 0;
 }
 
@@ -23,6 +25,10 @@ ul {
 .nav-list {
   margin: 0;
   padding: 0;
+}
+
+.nav-list a {
+  padding: 5px;
 }
 
 .nav-item {
@@ -68,87 +74,68 @@ ul {
 }
 
 @media screen and (min-width: 768px) {
-  h2,
-  body {
-    padding: 0;
-    font-size: 20px;
-  }
-
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-}
 
-h1 {
-  font-size: 15px;
-  margin-top: 15px;
-  padding-bottom: 20px;
-}
+  .main {
+    margin-top: 100px;
+    display: flex;
+  }
 
-body {
-  padding: 10px;
-}
+  .about-container {
+    flex: 1;
+  }
 
-.nav-item {
-  padding: 8px;
-}
+  .nav-list {
+    display: flex;
+    align-items: center;
+  }
 
-.nav-list {
-  display: flex;
-  align-items: center;
-  margin-bottom: 70px;
-  padding: 10px;
-}
+  .circle-container {
+    flex: 1;
+    position: relative;
+  }
 
-.hire-us-link {
-  width: 70px;
-  background-color: black;
-  border-radius: 30px;
-}
+  .hire-us-link {
+    width: 70px;
+    background-color: black;
+    border-radius: 30px;
+  }
 
-.action-link {
-  width: 50vw;
-  height: 10%;
-  border-radius: 30px;
-}
+  .about-text {
+    width: 50%;
+    font-size: 15px;
+  }
 
-.about-text {
-  width: 50%;
-  font-size: 15px;
-}
+  .circle {
+    border-radius: 50%;
+    position: absolute;
+  }
 
-.circle-container {
-  flex: 1;
-}
+  .big {
+    background-color: rgba(247, 136, 167, 0.6);
+    height: 250px;
+    width: 250px;
+    right: 50px;
+    top: 50px;
+  }
 
-.circle-container {
-  position: relative;
-  flex: 1;
-}
+  .medium--- {
+    background-color: rgba(247, 193, 162, 0.7);
+    height: 200px;
+    width: 200px;
+    right: 0;
+    top: 200px;
+  }
 
-.big-circle {
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
-  background-color: rgba(247, 136, 167, 0.6);
-  display: flex;
-}
-.small-cirlce {
-  position: relative;
-  left: 900px;
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  background-color: rgba(247, 193, 162, 0.7);
-}
-.medium-circle {
-  position: relative;
-  left: 1200px;
-  bottom: 240px;
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  background-color: rgba(207, 130, 213, 0.6);
+  .small {
+    background-color: rgba(207, 130, 213, 0.6);
+    height: 125px;
+    width: 125px;
+    right: 0;
+    top: 150px;
+  }
 }
